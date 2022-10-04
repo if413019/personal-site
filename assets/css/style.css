@@ -1,0 +1,345 @@
+
+/* reset all default element styling and apply font family on global scope */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', arial, sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    background-color: #293462;
+    padding: 0px 0px 0px 30px;
+    position: fixed;
+    align-items: center;
+    height: 48px;
+    width:100%;
+}
+
+#site-logo {
+    height: 100%;
+}
+
+#menu-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 48px;
+    width: 320px;
+}
+
+.menu-item {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.menu-item a {
+    color: #f39e4b;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    color: #fff;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+h4, .h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    height: 640px;
+}
+
+.flip-container {
+    display: flex;
+    min-height: 300px;
+    height: 300px;
+}
+
+.wide-content h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.wide-content h1 {
+    font-size: 64px;
+    font-weight: 100;
+    color: #fff;
+    line-height: 70px;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #f4bc51;
+}
+
+.profile {
+    background-color: #f4bc51;
+    text-align: center;
+    margin-left: 10px;
+    padding: 100px 45px;
+}
+
+.profile-desc {
+    padding-top: 175px;
+    padding-bottom: 175px;
+    padding-left: 120px;
+    text-align: left;
+    background-image: url(../img/profile-desc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    flex-basis: 75%;
+}
+
+.profile img{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 8px;
+}
+
+.profile span {
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.profile p {
+    font-style: italic;
+    font-size: 13px;
+    color: #fff;
+    margin: 10px 10px;
+}
+
+.normal-content {
+    flex-basis: 25%;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0px 3px;
+}
+
+.social-icons li a {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    display: inline-block;
+    line-height: 36px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.5s;
+    color: #f4bc51;
+    font-size: 17px;
+}
+
+.white-border-button {
+    padding: 14px 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+.white-border-button a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.skill-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.content-skill {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    height:300px;
+}
+
+.content-skill.first {
+    background-color: #f4bc51;
+}
+
+.content-skill.second {
+    background-color: #f39e4b;
+}
+
+.content-skill.third {
+    background-color: #b94e5e;
+}
+
+.content-skill.fourth {
+    background-color: #e86859;
+}
+
+.backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/projects.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 80px 0px 80px 0px;
+    height: fit-content;
+
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    width:fit-content;
+    height:max-content;
+    padding: 3px 0px;
+}
+
+.project-item {
+    display: flex;
+    padding: 10px;   
+    margin: 3px 0px 3px 0px
+}
+
+.project-date {
+    flex-basis:10%;
+}
+
+.project-date span{
+    display: block;
+    background-color: #f4bc51;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 25px;
+    padding: 6px 6px 6px 6px;
+}
+
+.project-details {
+    flex-basis: 90%;
+    justify-content: center;
+    color:#293462;
+    padding: 0px 10px 0px 10px;
+}
+
+.white-button {
+    padding: 14px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    color: #121212;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #293462;
+    color: #fff;
+    height: 48px;
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .profile-desc {
+        padding: 64px 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 320;
+        color: #fff;
+        margin-bottom: 5px;
+    }
+
+    .profile {
+        background-color: #f4bc51;
+        text-align: center;
+        margin: 10px 0px;
+        padding: 48px 32px;
+    }
+
+    .skill-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wide-content h1 {
+        font-size: 48px;
+        font-weight: 100;
+        color: #fff;
+        line-height: 1em;
+    }
+
+    .content-skill {
+        flex-direction: column;
+        text-align: center;
+        color: #fff;
+        height:fit-content;
+        padding: 16px 32px;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .project-item {
+        display: flex;
+        padding: 10px;   
+        margin: 3px 0px 3px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+ }
